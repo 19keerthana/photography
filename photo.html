@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+             nav{
+                border-bottom: 2px solid black;
+            }
+
+            .logo{
+                float:left;
+                font-size: 42px;
+                }
+                ul,li{
+                display:inline;
+            }
+        ul{
+            float:right;
+        }
+        .logo, ul{
+            margin-top: 20px;
+        }
+        li{
+            font-size: 24px;
+            padding:10px;
+        }
+        .clearfix{
+            clear: both;
+        }
+        li.active{
+          text-decoration: underline;  
+        }
+            body{
+                background-color:antiquewhite;
+            }
+            
+            input{
+                   padding:10px 75px;
+                   box-shadow:5px 5px 5px gray;
+                  
+
+               }
+               #container{
+                   border:darkgray;
+                   position:fixed;
+                   top:30%;
+                   left:35%;
+               }
+            </style>
+        <link href="style.css" rel="stylesheet">
+        <title>photography world</title>
+        <body>
+            
+            <h1 align="center"style="color:black">PHOTOGRAPHY WORLD</h1>
+            <h3 align="center">RIGISTER</h3>
+        </body>
+        <nav>
+        <ul>
+                <li class="active">Home</li>
+                <li>About us</li>
+                <li>Gallery</li>
+                <li>Contact us</li>
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
+
+        <div id="container">
+            <form>
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">email:</label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="password">password:</label>
+                <input type="password" id="password" name="username"><br><br>
+                <button>register</button><br><br>
+                <button>create an account</button>
+            </form>
+            <script type="text/javascript">
+            document.querySelector("err.msg").innerHTML="invalid username/password"document
+            </script>
+        </div>
+         </head>
+    </html>
